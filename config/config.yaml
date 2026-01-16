@@ -26,28 +26,34 @@ app:
 platforms:
   - id: "toutiao"
     name: "今日头条"
-  - id: "baidu"
-    name: "百度热搜"
+  - id: "mktnews"
+    name: "MKT新闻"
   - id: "wallstreetcn-hot"
     name: "华尔街见闻"
   - id: "thepaper"
     name: "澎湃新闻"
-  - id: "bilibili-hot-search"
-    name: "bilibili 热搜"
-  - id: "cls-hot"
-    name: "财联社热门"
-  - id: "ifeng"
-    name: "凤凰网"
-  - id: "tieba"
-    name: "贴吧"
   - id: "weibo"
     name: "微博"
   - id: "douyin"
     name: "抖音"
   - id: "zhihu"
     name: "知乎"
-
-
+  - id: "jin10"
+    name: "金十数据"
+  - id: "xueqiu"
+    name: "雪球"
+  - id: ""cls-hot"
+    name: "财联社热门"
+  - id: "wallstreetcn-news"
+    name: "华尔街见闻 最新"
+  - id: "cls-telegraph"
+    name: "财联社 电报"
+  - id: "fastbull-news"
+    name: "法布财经 头条"
+  - id: "juejin"
+    name: "掘金"
+  - id: "sspai"
+    name: "少数派"
 # ===============================================================
 # 3. 数据源 - RSS 订阅
 #
@@ -122,7 +128,7 @@ rss:
 #    • 适用场景：避免重复信息干扰
 # ===============================================================
 report:
-  mode: "current"                     # 可选: daily | current | incremental
+  mode: "incremental"                     # 可选: daily | current | incremental
   display_mode: "keyword"             # 可选: keyword | platform
                                       # keyword: 按关键词分组显示（默认）
                                       # platform: 按平台/来源分组显示
